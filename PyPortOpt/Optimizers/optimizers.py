@@ -583,7 +583,10 @@ def rollingwindow_backtest(
                 float(lambda_l1),
                 float(lambda_l2),
             )
-
+        elif optimizerName == "test":
+            import test
+            test.displayText()
+            
         for j in range(df1.shape[1]):
             if df1.columns[j] in sample_stocks:
                 w_opt[j] = w_sample[k]
