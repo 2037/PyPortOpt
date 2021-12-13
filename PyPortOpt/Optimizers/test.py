@@ -1,0 +1,2 @@
+def displayText():
+    print("Optimized!")
